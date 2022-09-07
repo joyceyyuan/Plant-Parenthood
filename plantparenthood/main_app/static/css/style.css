@@ -1,15 +1,18 @@
 * {
     box-sizing: border-box;
 }
+
 body {
     height: 100vh;
     margin: 0;
 }
+
 .title {
     position: absolute;
     bottom: -30px;
     left: 0px;
 }
+
 .base-header-plant {
     display: flex;
     flex-direction: row;
@@ -17,13 +20,15 @@ body {
     margin-bottom: -75px;
     font-size: 150px;
 }
+
 .base-header-parenthood {
     display: flex;
     flex-direction: row;
     align-content: flex-end;
     font-size: 150px;
 }
-.about{
+
+.about {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -32,20 +37,24 @@ body {
     right: 10px;
     resize: none;
 }
-.wrapper{
+
+.wrapper {
     display: flex;
 }
-.wrapper .static-txt{
+
+.wrapper .static-txt {
     font-size: 60px;
     font-weight: 400;
 }
-.wrapper .dynamic-txts{
+
+.wrapper .dynamic-txts {
     margin-left: 15px;
     height: 90px;
     line-height: 90px;
     overflow: hidden;
 }
-.dynamic-txts li{
+
+.dynamic-txts li {
     list-style: none;
     color: green;
     font-size: 60px;
@@ -54,17 +63,20 @@ body {
     top: 0;
     animation: slide 12s steps(4) infinite;
 }
+
 @keyframes slide {
-    100%{
-    top: -360px;
+    100% {
+        top: -360px;
     }
 }
-.dynamic-txts li span{
+
+.dynamic-txts li span {
     position: relative;
     margin: 0 0 0 -30px;
     line-height: 90px;
 }
-.dynamic-txts li span::after{
+
+.dynamic-txts li span::after {
     content: "";
     position: absolute;
     left: 0;
@@ -74,8 +86,41 @@ body {
     border-left: 2px solid green;
     animation: typing 3s steps(10) infinite;
 }
+
 @keyframes typing {
-    40%, 60%{
-    left: 100%;
+
+    40%,
+    60% {
+        left: 100%;
     }
+}
+
+.row {
+    align-items: center;
+}
+
+h3 {
+    margin-bottom: 100px auto;
+    font-weight: 500;
+    line-height: 1.2;
+}
+
+.green-text {
+    color: green
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    font-size: 16px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px 5px #bfd6cb;
+    padding: 25px;
+    background-color: #eaf1ea;
+    align-items: center;
+}
+
+table td,th {
+    padding: 5px;
+    text-align: left;
 }
